@@ -1862,7 +1862,7 @@
                           </zone-style>
                         </zone>
                         <zone h='86848' id='35' name='Price (2)' w='18055' x='81945' y='5860'>
-                          <layout-cache cell-count-w='1' non-cell-size-w='63' type-h='fixed' type-w='cell' />
+                          <layout-cache type-h='fixed' type-w='cell' />
                           <zone-style>
                             <format attr='border-color' value='#000000' />
                             <format attr='border-style' value='none' />
@@ -2137,7 +2137,7 @@
       <simple-id uuid='{61037C42-A3EA-4838-9708-B6A386CFA542}' />
     </dashboard>
   </dashboards>
-  <windows source-height='30'>
+  <windows pres-mode='true' source-height='30'>
     <window class='worksheet' name='DCountClarity'>
       <cards>
         <edge name='left'>
@@ -2418,7 +2418,7 @@
       </cards>
       <simple-id uuid='{432A244D-DF1D-460F-8E15-200C57080F02}' />
     </window>
-    <window class='worksheet' maximized='true' name='DiamondsbyCaratHistogram'>
+    <window class='worksheet' name='DiamondsbyCaratHistogram'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -2515,7 +2515,7 @@
       <active id='-1' />
       <simple-id uuid='{D2D3B701-0A32-4D3D-BD2C-B94D1D634C2E}' />
     </window>
-    <window class='dashboard' name='Diamonds'>
+    <window class='dashboard' maximized='true' name='Diamonds'>
       <viewpoints>
         <viewpoint name='DCountClarity'>
           <zoom type='entire-view' />

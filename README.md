@@ -95,7 +95,7 @@ Diamonds are graded under 10x magnification. So a diamond that is “Slightly In
 ## **Tableau Data Dashboard**
 
 Dashboards are powerful tools for communicating important information __at-a-glance__. The goal for this challenge was to build a data dashboard using our diamonds dataset.
-You can access the Public Tableau Dashboard using this [Link](https://venngage-wordpress.s3.amazonaws.com/uploads/2020/06/What-is-Data-Visualization-Blog-Header.jpg)
+You can access the Public Tableau Dashboard using this [Link](https://public.tableau.com/profile/manuel1108#!/vizhome/ih_datamadpt1120_project_m2_tableau_MAq/Diamonds?publish=yes)
 
 <p align="center"><img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Tableau_Logo.png"></p>
 
