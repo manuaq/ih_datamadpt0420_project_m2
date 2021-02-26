@@ -1,0 +1,2542 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20204.21.0114.0916                               -->
+<workbook source-build='2020.4.1 (20204.21.0114.0916)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <DashboardGridOverlay />
+    <DashboardGridSize />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <_.fcp.SetMembershipControl.true...SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='diamonds_train' inline='true' name='federated.1xq8vqt1nve0ei1gcrdhl1r31k6k' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='diamonds_train' name='textscan.0u1o8jj0y9dtc01cayqz61mu5dpu'>
+            <connection class='textscan' directory='/Users/manuelaquino/Bootcamp/ih_datamadpt1120_project_m2/data' filename='diamonds_train.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0u1o8jj0y9dtc01cayqz61mu5dpu' name='diamonds_train.csv' table='[diamonds_train#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='real' name='carat' ordinal='0' />
+            <column datatype='string' name='cut' ordinal='1' />
+            <column datatype='string' name='color' ordinal='2' />
+            <column datatype='string' name='clarity' ordinal='3' />
+            <column datatype='real' name='depth' ordinal='4' />
+            <column datatype='real' name='table' ordinal='5' />
+            <column datatype='integer' name='price' ordinal='6' />
+            <column datatype='real' name='x' ordinal='7' />
+            <column datatype='real' name='y' ordinal='8' />
+            <column datatype='real' name='z' ordinal='9' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0u1o8jj0y9dtc01cayqz61mu5dpu' name='diamonds_train.csv' table='[diamonds_train#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='real' name='carat' ordinal='0' />
+            <column datatype='string' name='cut' ordinal='1' />
+            <column datatype='string' name='color' ordinal='2' />
+            <column datatype='string' name='clarity' ordinal='3' />
+            <column datatype='real' name='depth' ordinal='4' />
+            <column datatype='real' name='table' ordinal='5' />
+            <column datatype='integer' name='price' ordinal='6' />
+            <column datatype='real' name='x' ordinal='7' />
+            <column datatype='real' name='y' ordinal='8' />
+            <column datatype='real' name='z' ordinal='9' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[diamonds_train.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>carat</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[carat]</local-name>
+            <parent-name>[diamonds_train.csv]</parent-name>
+            <remote-alias>carat</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[diamonds_train.csv_B970D1BDCE5A4CC5A06AF25491CEB729]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cut</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[cut]</local-name>
+            <parent-name>[diamonds_train.csv]</parent-name>
+            <remote-alias>cut</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[diamonds_train.csv_B970D1BDCE5A4CC5A06AF25491CEB729]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>color</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[color]</local-name>
+            <parent-name>[diamonds_train.csv]</parent-name>
+            <remote-alias>color</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[diamonds_train.csv_B970D1BDCE5A4CC5A06AF25491CEB729]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>clarity</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[clarity]</local-name>
+            <parent-name>[diamonds_train.csv]</parent-name>
+            <remote-alias>clarity</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[diamonds_train.csv_B970D1BDCE5A4CC5A06AF25491CEB729]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>depth</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[depth]</local-name>
+            <parent-name>[diamonds_train.csv]</parent-name>
+            <remote-alias>depth</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[diamonds_train.csv_B970D1BDCE5A4CC5A06AF25491CEB729]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>table</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[table]</local-name>
+            <parent-name>[diamonds_train.csv]</parent-name>
+            <remote-alias>table</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[diamonds_train.csv_B970D1BDCE5A4CC5A06AF25491CEB729]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>price</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[price]</local-name>
+            <parent-name>[diamonds_train.csv]</parent-name>
+            <remote-alias>price</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[diamonds_train.csv_B970D1BDCE5A4CC5A06AF25491CEB729]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>x</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[x]</local-name>
+            <parent-name>[diamonds_train.csv]</parent-name>
+            <remote-alias>x</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[diamonds_train.csv_B970D1BDCE5A4CC5A06AF25491CEB729]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>y</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[y]</local-name>
+            <parent-name>[diamonds_train.csv]</parent-name>
+            <remote-alias>y</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[diamonds_train.csv_B970D1BDCE5A4CC5A06AF25491CEB729]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>z</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[z]</local-name>
+            <parent-name>[diamonds_train.csv]</parent-name>
+            <remote-alias>z</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[diamonds_train.csv_B970D1BDCE5A4CC5A06AF25491CEB729]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='diamonds_train.csv' datatype='table' name='[__tableau_internal_object_id__].[diamonds_train.csv_B970D1BDCE5A4CC5A06AF25491CEB729]' role='measure' type='quantitative' />
+      <column caption='Carat' datatype='real' name='[carat]' role='measure' type='quantitative' />
+      <column caption='Clarity' datatype='string' name='[clarity]' role='dimension' type='nominal' />
+      <column caption='Color' datatype='string' name='[color]' role='dimension' type='nominal' />
+      <column caption='Cut' datatype='string' name='[cut]' role='dimension' type='nominal' />
+      <column caption='Depth' datatype='real' name='[depth]' role='measure' type='quantitative' />
+      <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+      <column caption='Table' datatype='real' name='[table]' role='measure' type='quantitative' />
+      <column caption='X' datatype='real' name='[x]' role='measure' type='quantitative' />
+      <column caption='Y' datatype='real' name='[y]' role='measure' type='quantitative' />
+      <column caption='Z' datatype='real' name='[z]' role='measure' type='quantitative' />
+      <column-instance column='[clarity]' derivation='None' name='[none:clarity:nk]' pivot='key' type='nominal' />
+      <column-instance column='[color]' derivation='None' name='[none:color:nk]' pivot='key' type='nominal' />
+      <column-instance column='[cut]' derivation='None' name='[none:cut:nk]' pivot='key' type='nominal' />
+      <group caption='Action (Clarity)' hidden='true' name='[Action (Clarity)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[clarity]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Color)' hidden='true' name='[Action (Color)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[color]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Cut)' hidden='true' name='[Action (Cut)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[cut]' />
+        </groupfilter>
+      </group>
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='/Users/manuelaquino/Documents/My Tableau Repository/Datasources/diamonds_train.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='02/25/2021 08:45:20 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='diamonds_train' increment-value='%null%' refresh-type='create' rows-inserted='40455' timestamp-start='2021-02-25 20:45:20.881' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>carat</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[carat]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>carat</remote-alias>
+              <ordinal>0</ordinal>
+              <family>diamonds_train.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>340</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[diamonds_train.csv_B970D1BDCE5A4CC5A06AF25491CEB729]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>cut</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[cut]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>cut</remote-alias>
+              <ordinal>1</ordinal>
+              <family>diamonds_train.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[diamonds_train.csv_B970D1BDCE5A4CC5A06AF25491CEB729]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>color</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[color]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>color</remote-alias>
+              <ordinal>2</ordinal>
+              <family>diamonds_train.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[diamonds_train.csv_B970D1BDCE5A4CC5A06AF25491CEB729]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>clarity</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[clarity]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>clarity</remote-alias>
+              <ordinal>3</ordinal>
+              <family>diamonds_train.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[diamonds_train.csv_B970D1BDCE5A4CC5A06AF25491CEB729]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>depth</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[depth]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>depth</remote-alias>
+              <ordinal>4</ordinal>
+              <family>diamonds_train.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>193</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[diamonds_train.csv_B970D1BDCE5A4CC5A06AF25491CEB729]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>table</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[table]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>table</remote-alias>
+              <ordinal>5</ordinal>
+              <family>diamonds_train.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>126</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[diamonds_train.csv_B970D1BDCE5A4CC5A06AF25491CEB729]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>price</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[price]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>price</remote-alias>
+              <ordinal>6</ordinal>
+              <family>diamonds_train.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7215</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[diamonds_train.csv_B970D1BDCE5A4CC5A06AF25491CEB729]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>x</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[x]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>x</remote-alias>
+              <ordinal>7</ordinal>
+              <family>diamonds_train.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>965</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[diamonds_train.csv_B970D1BDCE5A4CC5A06AF25491CEB729]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>y</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[y]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>y</remote-alias>
+              <ordinal>8</ordinal>
+              <family>diamonds_train.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>846</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[diamonds_train.csv_B970D1BDCE5A4CC5A06AF25491CEB729]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>z</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[z]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>z</remote-alias>
+              <ordinal>9</ordinal>
+              <family>diamonds_train.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>519</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[diamonds_train.csv_B970D1BDCE5A4CC5A06AF25491CEB729]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:clarity:nk]' palette='blue_teal_10_0' type='palette'>
+            <map to='#2c5985'>
+              <bucket>&quot;I1&quot;</bucket>
+            </map>
+            <map to='#306c94'>
+              <bucket>&quot;SI2&quot;</bucket>
+            </map>
+            <map to='#3482a4'>
+              <bucket>&quot;SI1&quot;</bucket>
+            </map>
+            <map to='#3c97b2'>
+              <bucket>&quot;VS2&quot;</bucket>
+            </map>
+            <map to='#57abbe'>
+              <bucket>&quot;VS1&quot;</bucket>
+            </map>
+            <map to='#79bec8'>
+              <bucket>&quot;VVS2&quot;</bucket>
+            </map>
+            <map to='#99d0d0'>
+              <bucket>&quot;VVS1&quot;</bucket>
+            </map>
+            <map to='#bce4d8'>
+              <bucket>&quot;IF&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:cut:nk]' palette='blue_teal_10_0' type='palette'>
+            <map to='#2c5985'>
+              <bucket>&quot;Fair&quot;</bucket>
+            </map>
+            <map to='#347da0'>
+              <bucket>&quot;Good&quot;</bucket>
+            </map>
+            <map to='#45a2b9'>
+              <bucket>&quot;Very Good&quot;</bucket>
+            </map>
+            <map to='#81c3cb'>
+              <bucket>&quot;Premium&quot;</bucket>
+            </map>
+            <map to='#bce4d8'>
+              <bucket>&quot;Ideal&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:color:nk]' palette='blue_teal_10_0' type='palette'>
+            <map to='#2c5985'>
+              <bucket>&quot;J&quot;</bucket>
+            </map>
+            <map to='#317097'>
+              <bucket>&quot;I&quot;</bucket>
+            </map>
+            <map to='#3589a9'>
+              <bucket>&quot;H&quot;</bucket>
+            </map>
+            <map to='#45a2b9'>
+              <bucket>&quot;G&quot;</bucket>
+            </map>
+            <map to='#6eb8c5'>
+              <bucket>&quot;F&quot;</bucket>
+            </map>
+            <map to='#93cdcf'>
+              <bucket>&quot;E&quot;</bucket>
+            </map>
+            <map to='#bce4d8'>
+              <bucket>&quot;D&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='diamonds_train.csv' id='diamonds_train.csv_B970D1BDCE5A4CC5A06AF25491CEB729'>
+            <properties context=''>
+              <relation connection='textscan.0u1o8jj0y9dtc01cayqz61mu5dpu' name='diamonds_train.csv' table='[diamonds_train#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='real' name='carat' ordinal='0' />
+                  <column datatype='string' name='cut' ordinal='1' />
+                  <column datatype='string' name='color' ordinal='2' />
+                  <column datatype='string' name='clarity' ordinal='3' />
+                  <column datatype='real' name='depth' ordinal='4' />
+                  <column datatype='real' name='table' ordinal='5' />
+                  <column datatype='integer' name='price' ordinal='6' />
+                  <column datatype='real' name='x' ordinal='7' />
+                  <column datatype='real' name='y' ordinal='8' />
+                  <column datatype='real' name='z' ordinal='9' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <shared-views>
+    <shared-view name='federated.1xq8vqt1nve0ei1gcrdhl1r31k6k'>
+      <datasources>
+        <datasource caption='diamonds_train' name='federated.1xq8vqt1nve0ei1gcrdhl1r31k6k' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1xq8vqt1nve0ei1gcrdhl1r31k6k'>
+        <column caption='Carat' datatype='real' name='[carat]' role='measure' type='quantitative' />
+        <column-instance column='[carat]' derivation='None' name='[none:carat:qk]' pivot='key' type='quantitative' />
+        <column-instance column='[price]' derivation='None' name='[none:price:qk]' pivot='key' type='quantitative' />
+        <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+      </datasource-dependencies>
+      <filter class='quantitative' column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[none:carat:qk]' included-values='in-range'>
+        <min>0.20000000000000001</min>
+        <max>4.5</max>
+      </filter>
+      <filter class='quantitative' column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[none:price:qk]' included-values='in-range'>
+        <min>326</min>
+        <max>18823</max>
+      </filter>
+    </shared-view>
+  </shared-views>
+  <actions>
+    <action caption='Filter 1 (generated)' name='[Action1]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Diamonds' type='sheet' worksheet='DCountClarity' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Diamonds' />
+      </command>
+    </action>
+    <action caption='Filter 2 (generated)' name='[Action2]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Diamonds' type='sheet' worksheet='Price (2)' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Diamonds' />
+      </command>
+    </action>
+    <action caption='Filter 3 (generated)' name='[Action3]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Diamonds' type='sheet' worksheet='DCountColor ' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Diamonds' />
+      </command>
+    </action>
+    <action caption='Filter 4 (generated)' name='[Action4]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Diamonds' type='sheet' worksheet='DCountCut' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Diamonds' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='BoxPlotPrice&amp;Clarity'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Distribution by Clarity and Price</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='diamonds_train' name='federated.1xq8vqt1nve0ei1gcrdhl1r31k6k' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1xq8vqt1nve0ei1gcrdhl1r31k6k'>
+            <column-instance column='[clarity]' derivation='Attribute' name='[attr:clarity:nk]' pivot='key' type='nominal' />
+            <column-instance column='[color]' derivation='Attribute' name='[attr:color:nk]' pivot='key' type='nominal' />
+            <column-instance column='[cut]' derivation='Attribute' name='[attr:cut:nk]' pivot='key' type='nominal' />
+            <column-instance column='[price]' derivation='Avg' name='[avg:price:qk]' pivot='key' type='quantitative' />
+            <column caption='Carat' datatype='real' name='[carat]' role='measure' type='quantitative' />
+            <column caption='Clarity' datatype='string' name='[clarity]' role='dimension' type='nominal' />
+            <column caption='Color' datatype='string' name='[color]' role='dimension' type='nominal' />
+            <column caption='Cut' datatype='string' name='[cut]' role='dimension' type='nominal' />
+            <column-instance column='[carat]' derivation='None' name='[none:carat:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[clarity]' derivation='None' name='[none:clarity:nk]' pivot='key' type='nominal' />
+            <column-instance column='[price]' derivation='None' name='[none:price:qk]' pivot='key' type='quantitative' />
+            <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+            <column-instance column='[carat]' derivation='Sum' name='[sum:carat:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[none:clarity:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;IF&quot;</bucket>
+              <bucket>&quot;VVS1&quot;</bucket>
+              <bucket>&quot;VVS2&quot;</bucket>
+              <bucket>&quot;VS1&quot;</bucket>
+              <bucket>&quot;VS2&quot;</bucket>
+              <bucket>&quot;SI1&quot;</bucket>
+              <bucket>&quot;SI2&quot;</bucket>
+              <bucket>&quot;I1&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[none:carat:qk]</column>
+            <column>[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[none:price:qk]</column>
+          </slices>
+          <aggregation value='false' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[none:clarity:nk]' value='89' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[avg:price:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[none:clarity:nk]' />
+              <tooltip column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[attr:clarity:nk]' />
+              <tooltip column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[attr:color:nk]' />
+              <tooltip column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[attr:cut:nk]' />
+              <tooltip column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[sum:carat:qk]' />
+            </encodings>
+            <reference-line axis-column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[avg:price:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline1' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[avg:price:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[avg:price:qk]</rows>
+        <cols>[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[none:clarity:nk]</cols>
+      </table>
+      <simple-id uuid='{98AF1268-86DF-4C9A-B50E-5F1664B22396}' />
+    </worksheet>
+    <worksheet name='BoxPlotPrice&amp;Color'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Distribution by Color and Price</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='diamonds_train' name='federated.1xq8vqt1nve0ei1gcrdhl1r31k6k' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1xq8vqt1nve0ei1gcrdhl1r31k6k'>
+            <column-instance column='[clarity]' derivation='Attribute' name='[attr:clarity:nk]' pivot='key' type='nominal' />
+            <column-instance column='[color]' derivation='Attribute' name='[attr:color:nk]' pivot='key' type='nominal' />
+            <column-instance column='[cut]' derivation='Attribute' name='[attr:cut:nk]' pivot='key' type='nominal' />
+            <column-instance column='[price]' derivation='Avg' name='[avg:price:qk]' pivot='key' type='quantitative' />
+            <column caption='Carat' datatype='real' name='[carat]' role='measure' type='quantitative' />
+            <column caption='Clarity' datatype='string' name='[clarity]' role='dimension' type='nominal' />
+            <column caption='Color' datatype='string' name='[color]' role='dimension' type='nominal' />
+            <column caption='Cut' datatype='string' name='[cut]' role='dimension' type='nominal' />
+            <column-instance column='[carat]' derivation='None' name='[none:carat:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[color]' derivation='None' name='[none:color:nk]' pivot='key' type='nominal' />
+            <column-instance column='[price]' derivation='None' name='[none:price:qk]' pivot='key' type='quantitative' />
+            <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+            <column-instance column='[carat]' derivation='Sum' name='[sum:carat:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[none:carat:qk]</column>
+            <column>[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[none:price:qk]</column>
+          </slices>
+          <aggregation value='false' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[none:color:nk]' value='94' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[avg:price:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+          <style-rule element='refboxplot'>
+            <format attr='boxplot-style' id='refline1' value='glass' />
+            <format attr='palette' id='refline1' value='bp_blue' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[none:color:nk]' />
+              <tooltip column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[sum:carat:qk]' />
+              <tooltip column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[attr:clarity:nk]' />
+              <tooltip column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[attr:color:nk]' />
+              <tooltip column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[attr:cut:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[avg:price:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline1' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[avg:price:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[avg:price:qk]</rows>
+        <cols>[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[none:color:nk]</cols>
+      </table>
+      <simple-id uuid='{4FBDAD60-C07B-4895-9C53-F960C472F442}' />
+    </worksheet>
+    <worksheet name='BoxPlotPrice&amp;Cut'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Distribution by Cut and Price</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='diamonds_train' name='federated.1xq8vqt1nve0ei1gcrdhl1r31k6k' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1xq8vqt1nve0ei1gcrdhl1r31k6k'>
+            <column caption='Carat' datatype='real' name='[carat]' role='measure' type='quantitative' />
+            <column caption='Cut' datatype='string' name='[cut]' role='dimension' type='nominal' />
+            <column-instance column='[carat]' derivation='None' name='[none:carat:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[cut]' derivation='None' name='[none:cut:nk]' pivot='key' type='nominal' />
+            <column-instance column='[price]' derivation='None' name='[none:price:qk]' pivot='key' type='quantitative' />
+            <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+            <column-instance column='[price]' derivation='Sum' name='[sum:price:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[none:cut:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Ideal&quot;</bucket>
+              <bucket>&quot;Premium&quot;</bucket>
+              <bucket>&quot;Very Good&quot;</bucket>
+              <bucket>&quot;Good&quot;</bucket>
+              <bucket>&quot;Fair&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[none:carat:qk]</column>
+            <column>[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[none:price:qk]</column>
+          </slices>
+          <aggregation value='false' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[none:cut:nk]' value='142' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[sum:price:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[none:cut:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[sum:price:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[sum:price:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[sum:price:qk]</rows>
+        <cols>[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[none:cut:nk]</cols>
+      </table>
+      <simple-id uuid='{CFC9EEE0-7674-4F54-A374-1E161663C171}' />
+    </worksheet>
+    <worksheet name='DCountClarity'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>Available Diamonds by Clarity</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='diamonds_train' name='federated.1xq8vqt1nve0ei1gcrdhl1r31k6k' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1xq8vqt1nve0ei1gcrdhl1r31k6k'>
+            <_.fcp.ObjectModelTableType.false...column caption='diamonds_train.csv' datatype='integer' name='[__tableau_internal_object_id__].[diamonds_train.csv_B970D1BDCE5A4CC5A06AF25491CEB729]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[diamonds_train.csv_B970D1BDCE5A4CC5A06AF25491CEB729]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:diamonds_train.csv_B970D1BDCE5A4CC5A06AF25491CEB729:qk]' pivot='key' type='quantitative' />
+            <_.fcp.ObjectModelTableType.true...column caption='diamonds_train.csv' datatype='table' name='[__tableau_internal_object_id__].[diamonds_train.csv_B970D1BDCE5A4CC5A06AF25491CEB729]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[diamonds_train.csv_B970D1BDCE5A4CC5A06AF25491CEB729]' derivation='Count' name='[__tableau_internal_object_id__].[pcto:cnt:diamonds_train.csv_B970D1BDCE5A4CC5A06AF25491CEB729:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column caption='Carat' datatype='real' name='[carat]' role='measure' type='quantitative' />
+            <column caption='Clarity' datatype='string' name='[clarity]' role='dimension' type='nominal' />
+            <column caption='Color' datatype='string' name='[color]' role='dimension' type='nominal' />
+            <column caption='Cut' datatype='string' name='[cut]' role='dimension' type='nominal' />
+            <column-instance column='[carat]' derivation='None' name='[none:carat:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[clarity]' derivation='None' name='[none:clarity:nk]' pivot='key' type='nominal' />
+            <column-instance column='[price]' derivation='None' name='[none:price:qk]' pivot='key' type='quantitative' />
+            <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[Action (Color)]'>
+            <groupfilter function='level-members' level='[color]' user:ui-action-filter='[Action3]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[Action (Cut)]'>
+            <groupfilter function='level-members' level='[cut]' user:ui-action-filter='[Action4]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <manual-sort column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[none:clarity:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;IF&quot;</bucket>
+              <bucket>&quot;VVS1&quot;</bucket>
+              <bucket>&quot;VVS2&quot;</bucket>
+              <bucket>&quot;VS1&quot;</bucket>
+              <bucket>&quot;VS2&quot;</bucket>
+              <bucket>&quot;SI1&quot;</bucket>
+              <bucket>&quot;SI2&quot;</bucket>
+              <bucket>&quot;I1&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[Action (Cut)]</column>
+            <column>[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[Action (Color)]</column>
+            <column>[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[none:carat:qk]</column>
+            <column>[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[none:price:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[__tableau_internal_object_id__].[cnt:diamonds_train.csv_B970D1BDCE5A4CC5A06AF25491CEB729:qk]' scope='rows' value='Diamonds in Inventory' />
+            <format attr='height' field='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[none:clarity:nk]' value='19' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[none:clarity:nk]' value='89' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[none:clarity:nk]' />
+              <text column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[__tableau_internal_object_id__].[cnt:diamonds_train.csv_B970D1BDCE5A4CC5A06AF25491CEB729:qk]' />
+              <text column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[__tableau_internal_object_id__].[pcto:cnt:diamonds_train.csv_B970D1BDCE5A4CC5A06AF25491CEB729:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[__tableau_internal_object_id__].[cnt:diamonds_train.csv_B970D1BDCE5A4CC5A06AF25491CEB729:qk]</rows>
+        <cols>[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[none:clarity:nk]</cols>
+      </table>
+      <simple-id uuid='{A47E0EFC-5EFE-43A2-B07F-3D09EFFDA360}' />
+    </worksheet>
+    <worksheet name='DCountClarityREV%'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Diamonds Available by Clarity</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='diamonds_train' name='federated.1xq8vqt1nve0ei1gcrdhl1r31k6k' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1xq8vqt1nve0ei1gcrdhl1r31k6k'>
+            <_.fcp.ObjectModelTableType.true...column caption='diamonds_train.csv' datatype='table' name='[__tableau_internal_object_id__].[diamonds_train.csv_B970D1BDCE5A4CC5A06AF25491CEB729]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[diamonds_train.csv_B970D1BDCE5A4CC5A06AF25491CEB729]' derivation='Count' name='[__tableau_internal_object_id__].[pcto:cnt:diamonds_train.csv_B970D1BDCE5A4CC5A06AF25491CEB729:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column caption='Carat' datatype='real' name='[carat]' role='measure' type='quantitative' />
+            <column caption='Clarity' datatype='string' name='[clarity]' role='dimension' type='nominal' />
+            <column-instance column='[carat]' derivation='None' name='[none:carat:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[clarity]' derivation='None' name='[none:clarity:nk]' pivot='key' type='nominal' />
+            <column-instance column='[price]' derivation='None' name='[none:price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[price]' derivation='Sum' name='[pcto:sum:price:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+            <column-instance column='[price]' derivation='Sum' name='[sum:price:qk]' pivot='key' type='quantitative' />
+            <_.fcp.ObjectModelTableType.false...column caption='diamonds_train.csv' datatype='integer' name='[__tableau_internal_object_id__].[diamonds_train.csv_B970D1BDCE5A4CC5A06AF25491CEB729]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[none:clarity:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;IF&quot;</bucket>
+              <bucket>&quot;VVS1&quot;</bucket>
+              <bucket>&quot;VVS2&quot;</bucket>
+              <bucket>&quot;VS1&quot;</bucket>
+              <bucket>&quot;VS2&quot;</bucket>
+              <bucket>&quot;SI1&quot;</bucket>
+              <bucket>&quot;SI2&quot;</bucket>
+              <bucket>&quot;I1&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[none:carat:qk]</column>
+            <column>[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[none:price:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[none:clarity:nk]' value='89' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[none:clarity:nk]' />
+              <text column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[__tableau_internal_object_id__].[pcto:cnt:diamonds_train.csv_B970D1BDCE5A4CC5A06AF25491CEB729:qk]' />
+              <text column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[sum:price:qk]' />
+              <text column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[pcto:sum:price:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[sum:price:qk]</rows>
+        <cols>[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[none:clarity:nk]</cols>
+      </table>
+      <simple-id uuid='{C1F62169-AFB7-451B-9ABA-77975EEE28B8}' />
+    </worksheet>
+    <worksheet name='DCountColor '>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>Available Diamonds by Color Grade</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='diamonds_train' name='federated.1xq8vqt1nve0ei1gcrdhl1r31k6k' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1xq8vqt1nve0ei1gcrdhl1r31k6k'>
+            <_.fcp.ObjectModelTableType.false...column caption='diamonds_train.csv' datatype='integer' name='[__tableau_internal_object_id__].[diamonds_train.csv_B970D1BDCE5A4CC5A06AF25491CEB729]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[diamonds_train.csv_B970D1BDCE5A4CC5A06AF25491CEB729]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:diamonds_train.csv_B970D1BDCE5A4CC5A06AF25491CEB729:qk]' pivot='key' type='quantitative' />
+            <_.fcp.ObjectModelTableType.true...column caption='diamonds_train.csv' datatype='table' name='[__tableau_internal_object_id__].[diamonds_train.csv_B970D1BDCE5A4CC5A06AF25491CEB729]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[diamonds_train.csv_B970D1BDCE5A4CC5A06AF25491CEB729]' derivation='Count' name='[__tableau_internal_object_id__].[pcto:cnt:diamonds_train.csv_B970D1BDCE5A4CC5A06AF25491CEB729:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column caption='Carat' datatype='real' name='[carat]' role='measure' type='quantitative' />
+            <column caption='Clarity' datatype='string' name='[clarity]' role='dimension' type='nominal' />
+            <column caption='Color' datatype='string' name='[color]' role='dimension' type='nominal' />
+            <column caption='Cut' datatype='string' name='[cut]' role='dimension' type='nominal' />
+            <column-instance column='[carat]' derivation='None' name='[none:carat:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[color]' derivation='None' name='[none:color:nk]' pivot='key' type='nominal' />
+            <column-instance column='[price]' derivation='None' name='[none:price:qk]' pivot='key' type='quantitative' />
+            <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[Action (Clarity)]'>
+            <groupfilter function='level-members' level='[clarity]' user:ui-action-filter='[Action1]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[Action (Cut)]'>
+            <groupfilter function='level-members' level='[cut]' user:ui-action-filter='[Action4]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[Action (Clarity)]</column>
+            <column>[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[Action (Cut)]</column>
+            <column>[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[none:carat:qk]</column>
+            <column>[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[none:price:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[__tableau_internal_object_id__].[cnt:diamonds_train.csv_B970D1BDCE5A4CC5A06AF25491CEB729:qk]' scope='rows' value='Diamonds in Inventory' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[none:color:nk]' value='108' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[none:color:nk]' />
+              <text column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[__tableau_internal_object_id__].[cnt:diamonds_train.csv_B970D1BDCE5A4CC5A06AF25491CEB729:qk]' />
+              <text column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[__tableau_internal_object_id__].[pcto:cnt:diamonds_train.csv_B970D1BDCE5A4CC5A06AF25491CEB729:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[__tableau_internal_object_id__].[cnt:diamonds_train.csv_B970D1BDCE5A4CC5A06AF25491CEB729:qk]</rows>
+        <cols>[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[none:color:nk]</cols>
+      </table>
+      <simple-id uuid='{23EB6646-242F-4C4A-B864-6B0F60EDBB22}' />
+    </worksheet>
+    <worksheet name='DCountColorREV%'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Diamonds Available by Color Grades</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='diamonds_train' name='federated.1xq8vqt1nve0ei1gcrdhl1r31k6k' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1xq8vqt1nve0ei1gcrdhl1r31k6k'>
+            <_.fcp.ObjectModelTableType.true...column caption='diamonds_train.csv' datatype='table' name='[__tableau_internal_object_id__].[diamonds_train.csv_B970D1BDCE5A4CC5A06AF25491CEB729]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[diamonds_train.csv_B970D1BDCE5A4CC5A06AF25491CEB729]' derivation='Count' name='[__tableau_internal_object_id__].[pcto:cnt:diamonds_train.csv_B970D1BDCE5A4CC5A06AF25491CEB729:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column caption='Carat' datatype='real' name='[carat]' role='measure' type='quantitative' />
+            <column caption='Color' datatype='string' name='[color]' role='dimension' type='nominal' />
+            <column-instance column='[carat]' derivation='None' name='[none:carat:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[color]' derivation='None' name='[none:color:nk]' pivot='key' type='nominal' />
+            <column-instance column='[price]' derivation='None' name='[none:price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[price]' derivation='Sum' name='[pcto:sum:price:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+            <column-instance column='[price]' derivation='Sum' name='[sum:price:qk]' pivot='key' type='quantitative' />
+            <_.fcp.ObjectModelTableType.false...column caption='diamonds_train.csv' datatype='integer' name='[__tableau_internal_object_id__].[diamonds_train.csv_B970D1BDCE5A4CC5A06AF25491CEB729]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[none:carat:qk]</column>
+            <column>[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[none:price:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[none:color:nk]' value='106' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[none:color:nk]' />
+              <text column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[__tableau_internal_object_id__].[pcto:cnt:diamonds_train.csv_B970D1BDCE5A4CC5A06AF25491CEB729:qk]' />
+              <text column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[sum:price:qk]' />
+              <text column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[pcto:sum:price:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[sum:price:qk]</rows>
+        <cols>[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[none:color:nk]</cols>
+      </table>
+      <simple-id uuid='{1B99769B-6C58-4E0A-A14E-A168FE0D5096}' />
+    </worksheet>
+    <worksheet name='DCountCut'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>Available Diamonds by Cut</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='diamonds_train' name='federated.1xq8vqt1nve0ei1gcrdhl1r31k6k' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1xq8vqt1nve0ei1gcrdhl1r31k6k'>
+            <_.fcp.ObjectModelTableType.false...column caption='diamonds_train.csv' datatype='integer' name='[__tableau_internal_object_id__].[diamonds_train.csv_B970D1BDCE5A4CC5A06AF25491CEB729]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[diamonds_train.csv_B970D1BDCE5A4CC5A06AF25491CEB729]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:diamonds_train.csv_B970D1BDCE5A4CC5A06AF25491CEB729:qk]' pivot='key' type='quantitative' />
+            <_.fcp.ObjectModelTableType.true...column caption='diamonds_train.csv' datatype='table' name='[__tableau_internal_object_id__].[diamonds_train.csv_B970D1BDCE5A4CC5A06AF25491CEB729]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[diamonds_train.csv_B970D1BDCE5A4CC5A06AF25491CEB729]' derivation='Count' name='[__tableau_internal_object_id__].[pcto:cnt:diamonds_train.csv_B970D1BDCE5A4CC5A06AF25491CEB729:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column caption='Carat' datatype='real' name='[carat]' role='measure' type='quantitative' />
+            <column caption='Clarity' datatype='string' name='[clarity]' role='dimension' type='nominal' />
+            <column caption='Color' datatype='string' name='[color]' role='dimension' type='nominal' />
+            <column caption='Cut' datatype='string' name='[cut]' role='dimension' type='nominal' />
+            <column-instance column='[carat]' derivation='None' name='[none:carat:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[cut]' derivation='None' name='[none:cut:nk]' pivot='key' type='nominal' />
+            <column-instance column='[price]' derivation='None' name='[none:price:qk]' pivot='key' type='quantitative' />
+            <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[Action (Clarity)]'>
+            <groupfilter function='level-members' level='[clarity]' user:ui-action-filter='[Action1]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[Action (Color)]'>
+            <groupfilter function='level-members' level='[color]' user:ui-action-filter='[Action3]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <manual-sort column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[none:cut:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Ideal&quot;</bucket>
+              <bucket>&quot;Premium&quot;</bucket>
+              <bucket>&quot;Very Good&quot;</bucket>
+              <bucket>&quot;Good&quot;</bucket>
+              <bucket>&quot;Fair&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[Action (Clarity)]</column>
+            <column>[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[Action (Color)]</column>
+            <column>[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[none:carat:qk]</column>
+            <column>[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[none:price:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[__tableau_internal_object_id__].[cnt:diamonds_train.csv_B970D1BDCE5A4CC5A06AF25491CEB729:qk]' scope='rows' value='Diamonds in Inventory' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[none:cut:nk]' value='151' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[none:cut:nk]' />
+              <text column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[__tableau_internal_object_id__].[cnt:diamonds_train.csv_B970D1BDCE5A4CC5A06AF25491CEB729:qk]' />
+              <text column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[__tableau_internal_object_id__].[pcto:cnt:diamonds_train.csv_B970D1BDCE5A4CC5A06AF25491CEB729:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[__tableau_internal_object_id__].[cnt:diamonds_train.csv_B970D1BDCE5A4CC5A06AF25491CEB729:qk]</rows>
+        <cols>[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[none:cut:nk]</cols>
+      </table>
+      <simple-id uuid='{FB934991-8197-4898-BF93-85ACEDB35CAA}' />
+    </worksheet>
+    <worksheet name='DiamondsbyCaratBoxPlot'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>Carats</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='diamonds_train' name='federated.1xq8vqt1nve0ei1gcrdhl1r31k6k' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1xq8vqt1nve0ei1gcrdhl1r31k6k'>
+            <_.fcp.ObjectModelTableType.false...column caption='diamonds_train.csv' datatype='integer' name='[__tableau_internal_object_id__].[diamonds_train.csv_B970D1BDCE5A4CC5A06AF25491CEB729]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[diamonds_train.csv_B970D1BDCE5A4CC5A06AF25491CEB729]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:diamonds_train.csv_B970D1BDCE5A4CC5A06AF25491CEB729:qk]' pivot='key' type='quantitative' />
+            <_.fcp.ObjectModelTableType.true...column caption='diamonds_train.csv' datatype='table' name='[__tableau_internal_object_id__].[diamonds_train.csv_B970D1BDCE5A4CC5A06AF25491CEB729]' role='measure' type='quantitative' />
+            <column-instance column='[clarity]' derivation='Attribute' name='[attr:clarity:nk]' pivot='key' type='nominal' />
+            <column-instance column='[color]' derivation='Attribute' name='[attr:color:nk]' pivot='key' type='nominal' />
+            <column-instance column='[cut]' derivation='Attribute' name='[attr:cut:nk]' pivot='key' type='nominal' />
+            <column caption='Carat' datatype='real' name='[carat]' role='measure' type='quantitative' />
+            <column caption='Clarity' datatype='string' name='[clarity]' role='dimension' type='nominal' />
+            <column caption='Color' datatype='string' name='[color]' role='dimension' type='nominal' />
+            <column caption='Cut' datatype='string' name='[cut]' role='dimension' type='nominal' />
+            <column caption='Depth' datatype='real' name='[depth]' role='measure' type='quantitative' />
+            <column-instance column='[carat]' derivation='None' name='[none:carat:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[clarity]' derivation='None' name='[none:clarity:nk]' pivot='key' type='nominal' />
+            <column-instance column='[color]' derivation='None' name='[none:color:nk]' pivot='key' type='nominal' />
+            <column-instance column='[cut]' derivation='None' name='[none:cut:nk]' pivot='key' type='nominal' />
+            <column-instance column='[price]' derivation='None' name='[none:price:qk]' pivot='key' type='quantitative' />
+            <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+            <column-instance column='[carat]' derivation='Sum' name='[sum:carat:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[depth]' derivation='Sum' name='[sum:depth:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[price]' derivation='Sum' name='[sum:price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[table]' derivation='Sum' name='[sum:table:qk]' pivot='key' type='quantitative' />
+            <column caption='Table' datatype='real' name='[table]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[Action (Clarity)]'>
+            <groupfilter function='level-members' level='[clarity]' user:ui-action-filter='[Action1]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[Action (Color)]'>
+            <groupfilter function='level-members' level='[color]' user:ui-action-filter='[Action3]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[Action (Cut)]'>
+            <groupfilter function='level-members' level='[cut]' user:ui-action-filter='[Action4]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[none:clarity:nk]'>
+            <groupfilter function='level-members' level='[none:clarity:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[none:color:nk]'>
+            <groupfilter function='level-members' level='[none:color:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[none:cut:nk]'>
+            <groupfilter function='level-members' level='[none:cut:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[none:clarity:nk]</column>
+            <column>[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[none:color:nk]</column>
+            <column>[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[none:cut:nk]</column>
+            <column>[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[none:carat:qk]</column>
+            <column>[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[Action (Clarity)]</column>
+            <column>[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[Action (Cut)]</column>
+            <column>[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[Action (Color)]</column>
+            <column>[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[none:price:qk]</column>
+          </slices>
+          <aggregation value='false' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[sum:carat:qk]' field-type='quantitative' major-origin='0.0' major-spacing='0.1' scope='rows' type='space' />
+            <format attr='auto-subtitle' class='0' field='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[__tableau_internal_object_id__].[cnt:diamonds_train.csv_B970D1BDCE5A4CC5A06AF25491CEB729:qk]' scope='cols' value='true' />
+            <format attr='display' class='0' field='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[__tableau_internal_object_id__].[cnt:diamonds_train.csv_B970D1BDCE5A4CC5A06AF25491CEB729:qk]' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size' field='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[sum:carat:qk]' field-type='quantitative' max-size='1' min-size='0' type='quantsize' />
+            <encoding attr='color' field='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[sum:carat:qk]' palette='blue_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='refboxplot'>
+            <format attr='palette' id='refline0' value='bp_gray60' />
+            <format attr='palette' id='refline1' value='bp_blue' />
+          </style-rule>
+          <style-rule element='axis-title'>
+            <format attr='font-size' field='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[sum:carat:qk]' value='11' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[none:carat:qk]' value='Carat Size Range' />
+            <format attr='font-size' value='9' />
+          </style-rule>
+          <style-rule element='quick-filter-title'>
+            <format attr='font-size' value='12' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[sum:carat:qk]' />
+              <size column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[sum:carat:qk]' />
+              <tooltip column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[sum:price:qk]' />
+              <tooltip column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[attr:clarity:nk]' />
+              <tooltip column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[attr:color:nk]' />
+              <tooltip column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[attr:cut:nk]' />
+              <tooltip column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[sum:depth:qk]' />
+              <tooltip column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[sum:table:qk]' />
+            </encodings>
+            <reference-line axis-column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[__tableau_internal_object_id__].[cnt:diamonds_train.csv_B970D1BDCE5A4CC5A06AF25491CEB729:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[__tableau_internal_object_id__].[cnt:diamonds_train.csv_B970D1BDCE5A4CC5A06AF25491CEB729:qk]' z-order='1' />
+            <reference-line axis-column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[sum:carat:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline1' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[sum:carat:qk]' z-order='2' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.6305404901504517' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='1079' />
+                <format attr='maxwidth' value='1079' />
+                <format attr='minheight' value='477' />
+                <format attr='maxheight' value='477' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[sum:carat:qk]</rows>
+        <cols>[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[__tableau_internal_object_id__].[cnt:diamonds_train.csv_B970D1BDCE5A4CC5A06AF25491CEB729:qk]</cols>
+      </table>
+      <simple-id uuid='{5B9DC40F-E5E5-4939-8C09-9A66AE4DEADA}' />
+    </worksheet>
+    <worksheet name='DiamondsbyCaratHistogram'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>Distribution of Diamonds by Carat</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='diamonds_train' name='federated.1xq8vqt1nve0ei1gcrdhl1r31k6k' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1xq8vqt1nve0ei1gcrdhl1r31k6k'>
+            <_.fcp.ObjectModelTableType.false...column caption='diamonds_train.csv' datatype='integer' name='[__tableau_internal_object_id__].[diamonds_train.csv_B970D1BDCE5A4CC5A06AF25491CEB729]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[diamonds_train.csv_B970D1BDCE5A4CC5A06AF25491CEB729]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:diamonds_train.csv_B970D1BDCE5A4CC5A06AF25491CEB729:qk]' pivot='key' type='quantitative' />
+            <_.fcp.ObjectModelTableType.true...column caption='diamonds_train.csv' datatype='table' name='[__tableau_internal_object_id__].[diamonds_train.csv_B970D1BDCE5A4CC5A06AF25491CEB729]' role='measure' type='quantitative' />
+            <column-instance column='[clarity]' derivation='Attribute' name='[attr:clarity:nk]' pivot='key' type='nominal' />
+            <column-instance column='[color]' derivation='Attribute' name='[attr:color:nk]' pivot='key' type='nominal' />
+            <column-instance column='[cut]' derivation='Attribute' name='[attr:cut:nk]' pivot='key' type='nominal' />
+            <column caption='Carat' datatype='real' name='[carat]' role='measure' type='quantitative' />
+            <column caption='Clarity' datatype='string' name='[clarity]' role='dimension' type='nominal' />
+            <column caption='Color' datatype='string' name='[color]' role='dimension' type='nominal' />
+            <column caption='Cut' datatype='string' name='[cut]' role='dimension' type='nominal' />
+            <column-instance column='[carat]' derivation='None' name='[none:carat:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[clarity]' derivation='None' name='[none:clarity:nk]' pivot='key' type='nominal' />
+            <column-instance column='[color]' derivation='None' name='[none:color:nk]' pivot='key' type='nominal' />
+            <column-instance column='[cut]' derivation='None' name='[none:cut:nk]' pivot='key' type='nominal' />
+            <column-instance column='[price]' derivation='None' name='[none:price:qk]' pivot='key' type='quantitative' />
+            <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+            <column-instance column='[carat]' derivation='Sum' name='[sum:carat:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[price]' derivation='Sum' name='[sum:price:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[none:clarity:nk]'>
+            <groupfilter function='level-members' level='[none:clarity:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[none:color:nk]'>
+            <groupfilter function='level-members' level='[none:color:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[none:cut:nk]'>
+            <groupfilter function='level-members' level='[none:cut:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[none:carat:qk]</column>
+            <column>[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[none:clarity:nk]</column>
+            <column>[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[none:color:nk]</column>
+            <column>[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[none:cut:nk]</column>
+            <column>[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[none:price:qk]</column>
+          </slices>
+          <aggregation value='false' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[sum:carat:qk]' field-type='quantitative' major-origin='0.0' major-spacing='0.1' max='2.5' min='0.0' range-type='fixed' scope='cols' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size' field='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[sum:carat:qk]' field-type='quantitative' max-size='1' min-size='0' type='quantsize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[sum:carat:qk]' />
+              <size column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[sum:carat:qk]' />
+              <tooltip column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[sum:price:qk]' />
+              <tooltip column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[attr:clarity:nk]' />
+              <tooltip column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[attr:color:nk]' />
+              <tooltip column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[attr:cut:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='2' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='714' />
+                <format attr='maxwidth' value='714' />
+                <format attr='minheight' value='477' />
+                <format attr='maxheight' value='477' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[__tableau_internal_object_id__].[cnt:diamonds_train.csv_B970D1BDCE5A4CC5A06AF25491CEB729:qk]</rows>
+        <cols>[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[sum:carat:qk]</cols>
+      </table>
+      <simple-id uuid='{CDD21CCF-1610-4A38-9E47-D610604A4006}' />
+    </worksheet>
+    <worksheet name='NumericVariablesScatterPlot'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Numerical Variables Scatter Plot</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='diamonds_train' name='federated.1xq8vqt1nve0ei1gcrdhl1r31k6k' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1xq8vqt1nve0ei1gcrdhl1r31k6k'>
+            <column-instance column='[carat]' derivation='Avg' name='[avg:carat:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[depth]' derivation='Avg' name='[avg:depth:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[price]' derivation='Avg' name='[avg:price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[table]' derivation='Avg' name='[avg:table:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[x]' derivation='Avg' name='[avg:x:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[y]' derivation='Avg' name='[avg:y:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[z]' derivation='Avg' name='[avg:z:qk]' pivot='key' type='quantitative' />
+            <column caption='Carat' datatype='real' name='[carat]' role='measure' type='quantitative' />
+            <column caption='Depth' datatype='real' name='[depth]' role='measure' type='quantitative' />
+            <column-instance column='[carat]' derivation='None' name='[none:carat:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[price]' derivation='None' name='[none:price:qk]' pivot='key' type='quantitative' />
+            <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+            <column caption='Table' datatype='real' name='[table]' role='measure' type='quantitative' />
+            <column caption='X' datatype='real' name='[x]' role='measure' type='quantitative' />
+            <column caption='Y' datatype='real' name='[y]' role='measure' type='quantitative' />
+            <column caption='Z' datatype='real' name='[z]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[:Measure Names]'>
+            <groupfilter function='level-members' level='[:Measure Names]' />
+          </filter>
+          <slices>
+            <column>[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[:Measure Names]</column>
+            <column>[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[none:carat:qk]</column>
+            <column>[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[none:price:qk]</column>
+          </slices>
+          <aggregation value='false' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='126' />
+                <format attr='maxwidth' value='126' />
+                <format attr='minheight' value='100' />
+                <format attr='maxheight' value='100' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[avg:depth:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.0099999997764825821' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[avg:carat:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.0099999997764825821' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[avg:price:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.0099999997764825821' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[avg:table:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.0099999997764825821' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[avg:x:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.0099999997764825821' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='6' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[avg:y:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.0099999997764825821' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='7' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[avg:z:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.0099999997764825821' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[avg:depth:qk] + ([federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[avg:carat:qk] + ([federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[avg:price:qk] + ([federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[avg:table:qk] + ([federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[avg:x:qk] + ([federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[avg:y:qk] + [federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[avg:z:qk]))))))</rows>
+        <cols>([federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[avg:depth:qk] + ([federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[avg:carat:qk] + ([federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[avg:price:qk] + ([federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[avg:table:qk] + ([federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[avg:x:qk] + ([federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[avg:y:qk] + [federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[avg:z:qk]))))))</cols>
+      </table>
+      <simple-id uuid='{43632148-21DA-4DDC-93BF-4C3A4F05AB43}' />
+    </worksheet>
+    <worksheet name='Price'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>Prices</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='diamonds_train' name='federated.1xq8vqt1nve0ei1gcrdhl1r31k6k' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1xq8vqt1nve0ei1gcrdhl1r31k6k'>
+            <column-instance column='[clarity]' derivation='Attribute' name='[attr:clarity:nk]' pivot='key' type='nominal' />
+            <column-instance column='[color]' derivation='Attribute' name='[attr:color:nk]' pivot='key' type='nominal' />
+            <column-instance column='[cut]' derivation='Attribute' name='[attr:cut:nk]' pivot='key' type='nominal' />
+            <column caption='Carat' datatype='real' name='[carat]' role='measure' type='quantitative' />
+            <column caption='Clarity' datatype='string' name='[clarity]' role='dimension' type='nominal' />
+            <column caption='Color' datatype='string' name='[color]' role='dimension' type='nominal' />
+            <column caption='Cut' datatype='string' name='[cut]' role='dimension' type='nominal' />
+            <column-instance column='[carat]' derivation='None' name='[none:carat:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[price]' derivation='None' name='[none:price:qk]' pivot='key' type='quantitative' />
+            <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+            <column-instance column='[carat]' derivation='Sum' name='[sum:carat:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[price]' derivation='Sum' name='[sum:price:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[Action (Clarity)]'>
+            <groupfilter function='level-members' level='[clarity]' user:ui-action-filter='[Action1]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[Action (Color)]'>
+            <groupfilter function='level-members' level='[color]' user:ui-action-filter='[Action3]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[Action (Cut)]'>
+            <groupfilter function='member' level='[cut]' member='&quot;Fair&quot;' user:ui-action-filter='[Action4]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[Action (Clarity)]</column>
+            <column>[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[Action (Cut)]</column>
+            <column>[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[Action (Color)]</column>
+            <column>[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[none:carat:qk]</column>
+            <column>[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[none:price:qk]</column>
+          </slices>
+          <aggregation value='false' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='697' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size' field='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[sum:carat:qk]' field-type='quantitative' max-size='1' min-size='0' type='quantsize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[sum:price:qk]' />
+              <size column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[sum:carat:qk]' />
+              <lod column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[sum:carat:qk]' />
+              <tooltip column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[attr:clarity:nk]' />
+              <tooltip column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[attr:color:nk]' />
+              <tooltip column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[attr:cut:nk]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='false' />
+                <format attr='size' value='0.71898651123046875' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[sum:price:qk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{FE78128C-C781-42F2-B13A-2DC8DEA00016}' />
+    </worksheet>
+    <worksheet name='Price (2)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>Prices</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='diamonds_train' name='federated.1xq8vqt1nve0ei1gcrdhl1r31k6k' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1xq8vqt1nve0ei1gcrdhl1r31k6k'>
+            <column-instance column='[clarity]' derivation='Attribute' name='[attr:clarity:nk]' pivot='key' type='nominal' />
+            <column-instance column='[color]' derivation='Attribute' name='[attr:color:nk]' pivot='key' type='nominal' />
+            <column-instance column='[cut]' derivation='Attribute' name='[attr:cut:nk]' pivot='key' type='nominal' />
+            <column caption='Carat' datatype='real' name='[carat]' role='measure' type='quantitative' />
+            <column caption='Clarity' datatype='string' name='[clarity]' role='dimension' type='nominal' />
+            <column caption='Color' datatype='string' name='[color]' role='dimension' type='nominal' />
+            <column caption='Cut' datatype='string' name='[cut]' role='dimension' type='nominal' />
+            <column caption='Depth' datatype='real' name='[depth]' role='measure' type='quantitative' />
+            <column-instance column='[carat]' derivation='None' name='[none:carat:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[price]' derivation='None' name='[none:price:qk]' pivot='key' type='quantitative' />
+            <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+            <column-instance column='[carat]' derivation='Sum' name='[sum:carat:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[depth]' derivation='Sum' name='[sum:depth:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[price]' derivation='Sum' name='[sum:price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[table]' derivation='Sum' name='[sum:table:qk]' pivot='key' type='quantitative' />
+            <column caption='Table' datatype='real' name='[table]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[Action (Clarity)]'>
+            <groupfilter function='level-members' level='[clarity]' user:ui-action-filter='[Action1]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[Action (Color)]'>
+            <groupfilter function='level-members' level='[color]' user:ui-action-filter='[Action3]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[Action (Cut)]'>
+            <groupfilter function='level-members' level='[cut]' user:ui-action-filter='[Action4]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[Action (Clarity)]</column>
+            <column>[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[Action (Cut)]</column>
+            <column>[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[Action (Color)]</column>
+            <column>[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[none:carat:qk]</column>
+            <column>[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[none:price:qk]</column>
+          </slices>
+          <aggregation value='false' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='758' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size' field='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[sum:carat:qk]' field-type='quantitative' max-size='1' min-size='0' type='quantsize' />
+            <encoding attr='size' field='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[sum:price:qk]' field-type='quantitative' max-size='1' min-size='0' type='quantsize' />
+          </style-rule>
+          <style-rule element='refboxplot'>
+            <format attr='fill-color' id='refline1' value='#f0f0f0d9' />
+            <format attr='palette' id='refline1' value='bp_blue' />
+            <format attr='opacity' id='refline1' value='167' />
+          </style-rule>
+          <style-rule element='axis-title'>
+            <format attr='font-size' field='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[sum:price:qk]' value='11' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[none:price:qk]' value='Price Range'>
+              <formatted-text>
+                <run fontsize='12'>Price Range</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[sum:price:qk]' />
+              <size column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[sum:price:qk]' />
+              <tooltip column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[attr:clarity:nk]' />
+              <tooltip column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[attr:color:nk]' />
+              <tooltip column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[attr:cut:nk]' />
+              <tooltip column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[sum:depth:qk]' />
+              <tooltip column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[sum:table:qk]' />
+              <tooltip column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[sum:carat:qk]' />
+            </encodings>
+            <reference-line axis-column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[sum:price:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline1' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[sum:price:qk]' z-order='2' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.46577703952789307' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[sum:price:qk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{ABCC0298-0BB7-4ED0-864C-4FC514838399}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Diamonds'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>Diamonds - The 4 C&apos;s</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#00000000' />
+        </style-rule>
+        <style-rule element='dash-title'>
+          <format attr='background-color' value='#f5f5f5' />
+          <format attr='color' value='#4e79a7' />
+          <format attr='font-weight' value='bold' />
+          <format attr='font-size' value='20' />
+        </style-rule>
+      </style>
+      <size maxheight='768' maxwidth='1224' minheight='768' minwidth='1224' preset-index='2' sizing-mode='fixed' />
+      <datasources>
+        <datasource caption='diamonds_train' name='federated.1xq8vqt1nve0ei1gcrdhl1r31k6k' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1xq8vqt1nve0ei1gcrdhl1r31k6k'>
+        <column caption='Carat' datatype='real' name='[carat]' role='measure' type='quantitative' />
+        <column-instance column='[carat]' derivation='None' name='[none:carat:qk]' pivot='key' type='quantitative' />
+        <column-instance column='[price]' derivation='None' name='[none:price:qk]' pivot='key' type='quantitative' />
+        <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+      </datasource-dependencies>
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='7' w='100000' x='0' y='0'>
+          <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='100000' id='40' param='vert' w='100000' x='0' y='0'>
+            <zone _.fcp.SetMembershipControl.false...type='title' _.fcp.SetMembershipControl.true...type-v2='title' h='5860' id='41' w='100000' x='0' y='0'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='94140' id='38' w='100000' x='0' y='5860'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='86848' id='32' param='horz' w='100000' x='0' y='5860'>
+                <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='86848' id='30' param='horz' w='100000' x='0' y='5860'>
+                  <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='86848' id='27' param='vert' w='100000' x='0' y='5860'>
+                    <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='86848' id='25' w='100000' x='0' y='5860'>
+                      <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='86848' id='18' param='horz' w='100000' x='0' y='5860'>
+                        <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' fixed-size='971' h='86848' id='10' is-fixed='true' param='horz' w='79330' x='0' y='5860'>
+                          <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='86848' id='8' w='79330' x='0' y='5860'>
+                            <zone h='86848' id='6' name='DiamondsbyCaratBoxPlot' w='18157' x='0' y='5860'>
+                              <zone-style>
+                                <format attr='border-color' value='#000000' />
+                                <format attr='border-style' value='none' />
+                                <format attr='border-width' value='0' />
+                                <format attr='margin' value='4' />
+                              </zone-style>
+                            </zone>
+                            <zone h='28515' id='16' name='DCountClarity' w='58495' x='20835' y='64193'>
+                              <zone-style>
+                                <format attr='border-color' value='#000000' />
+                                <format attr='border-style' value='none' />
+                                <format attr='border-width' value='0' />
+                                <format attr='margin' value='4' />
+                              </zone-style>
+                            </zone>
+                            <zone h='29296' id='20' name='DCountCut' w='58495' x='20835' y='5860'>
+                              <zone-style>
+                                <format attr='border-color' value='#000000' />
+                                <format attr='border-style' value='none' />
+                                <format attr='border-width' value='0' />
+                                <format attr='margin' value='4' />
+                              </zone-style>
+                            </zone>
+                            <zone h='29037' id='22' name='DCountColor ' w='58495' x='20835' y='35156'>
+                              <zone-style>
+                                <format attr='border-color' value='#000000' />
+                                <format attr='border-style' value='none' />
+                                <format attr='border-width' value='0' />
+                                <format attr='margin' value='4' />
+                              </zone-style>
+                            </zone>
+                            <zone _.fcp.SetMembershipControl.false...type='empty' _.fcp.SetMembershipControl.true...type-v2='empty' h='86848' id='36' w='2678' x='18157' y='5860'>
+                              <zone-style>
+                                <format attr='border-color' value='#000000' />
+                                <format attr='border-style' value='none' />
+                                <format attr='border-width' value='0' />
+                                <format attr='margin' value='4' />
+                              </zone-style>
+                            </zone>
+                          </zone>
+                        </zone>
+                        <zone _.fcp.SetMembershipControl.false...type='empty' _.fcp.SetMembershipControl.true...type-v2='empty' fixed-size='24' h='86848' id='37' is-fixed='true' w='2615' x='79330' y='5860'>
+                          <zone-style>
+                            <format attr='border-color' value='#000000' />
+                            <format attr='border-style' value='none' />
+                            <format attr='border-width' value='0' />
+                            <format attr='margin' value='4' />
+                          </zone-style>
+                        </zone>
+                        <zone h='86848' id='35' name='Price (2)' w='18055' x='81945' y='5860'>
+                          <layout-cache cell-count-w='1' non-cell-size-w='63' type-h='fixed' type-w='cell' />
+                          <zone-style>
+                            <format attr='border-color' value='#000000' />
+                            <format attr='border-style' value='none' />
+                            <format attr='border-width' value='0' />
+                            <format attr='margin' value='4' />
+                          </zone-style>
+                        </zone>
+                      </zone>
+                    </zone>
+                  </zone>
+                </zone>
+              </zone>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='7292' id='34' param='horz' w='100000' x='0' y='92708'>
+                <zone _.fcp.SetMembershipControl.false...type='filter' _.fcp.SetMembershipControl.true...type-v2='filter' fixed-size='470' h='7292' id='33' is-fixed='true' name='DiamondsbyCaratBoxPlot' param='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[none:carat:qk]' values='database' w='39053' x='0' y='92708'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='filter' _.fcp.SetMembershipControl.true...type-v2='filter' h='7292' id='42' name='Price (2)' param='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[none:price:qk]' values='database' w='60947' x='39053' y='92708'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+        </zone>
+        <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' h='4036' id='45' is-scaled='1' param='/Users/manuelaquino/Desktop/diamonds_project/Ironhack_logo_transparent.png' w='3431' x='408' y='911' />
+        <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='2995' id='48' w='19363' x='3105' y='1953'>
+          <formatted-text>
+            <run bold='true'>Total Sample/Inventory: 4055 Diamonds</run>
+          </formatted-text>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run fontalignment='1'>Diamonds - The 4 C&apos;s</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='1600' minheight='1600' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='50' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97916' id='49' param='vert' w='98692' x='654' y='1042'>
+                <zone _.fcp.SetMembershipControl.false...type='title' _.fcp.SetMembershipControl.true...type-v2='title' h='5860' id='41' w='100000' x='0' y='0'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' fixed-size='31' h='4036' id='45' is-fixed='true' is-scaled='1' param='/Users/manuelaquino/Desktop/diamonds_project/Ironhack_logo_transparent.png' w='3431' x='408' y='911'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='2995' id='48' w='19363' x='3105' y='1953'>
+                  <formatted-text>
+                    <run bold='true'>Total Sample/Inventory: 4055 Diamonds</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='filter' _.fcp.SetMembershipControl.true...type-v2='filter' fixed-size='470' h='7292' id='33' name='DiamondsbyCaratBoxPlot' param='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[none:carat:qk]' values='database' w='39053' x='0' y='92708'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='86848' id='6' is-fixed='true' name='DiamondsbyCaratBoxPlot' w='18157' x='0' y='5860'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='217' h='29296' id='20' is-fixed='true' name='DCountCut' w='58495' x='20835' y='5860'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='filter' _.fcp.SetMembershipControl.true...type-v2='filter' h='7292' id='42' name='Price (2)' param='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[none:price:qk]' values='database' w='60947' x='39053' y='92708'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='86848' id='35' is-fixed='true' name='Price (2)' w='18055' x='81945' y='5860'>
+                  <layout-cache cell-count-w='1' non-cell-size-w='63' type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='215' h='29037' id='22' is-fixed='true' name='DCountColor ' w='58495' x='20835' y='35156'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='211' h='28515' id='16' is-fixed='true' name='DCountClarity' w='58495' x='20835' y='64193'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{E98D2309-A80C-4D02-8F8E-CEF4FE10548C}' />
+    </dashboard>
+    <dashboard name='Intro'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='8' w='100000' x='0' y='0'>
+          <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98000' id='11' param='vert' w='98400' x='800' y='1000'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='98000' id='9' w='98400' x='800' y='1000' />
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' h='18250' id='3' is-scaled='1' param='/Users/manuelaquino/Desktop/diamonds_project/Ironhack_logo_transparent.png' w='16300' x='700' y='6375' />
+        <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='12375' id='4' w='81700' x='16100' y='9750'>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000' fontname='SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace' fontsize='20'>Data Analytics - Project Module 2 - Data Visualization</run>
+          </formatted-text>
+        </zone>
+        <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='26250' id='5' w='93600' x='3300' y='29375'>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000' fontname='SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace' fontsize='18'>Dataset to work with:</run>
+            <run>Æ&#10;</run>
+            <run fontcolor='#000000' fontname='SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace' fontsize='18'>diamonds_train.csv dataset.</run>
+            <run>Æ&#10;&#10;</run>
+            <run bold='true' fontcolor='#000000' fontname='SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace' fontsize='18'>Focus on:</run>
+            <run>Æ&#10;</run>
+            <run fontcolor='#000000' fontname='SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace' fontsize='18'>Exploratory data analysis. (Matplotlib, Seaborn, Tableau)</run>
+            <run>Æ&#10;&#10;</run>
+            <run bold='true' fontcolor='#000000' fontname='SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace' fontsize='18'>Final objective:</run>
+            <run>Æ&#10;</run>
+            <run fontcolor='#000000' fontname='SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace' fontsize='18'>To create a Tableau Public Dashboard with some general insights. </run>
+          </formatted-text>
+        </zone>
+        <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' h='44375' id='6' is-scaled='1' param='/Users/manuelaquino/Desktop/diamonds_project/diamond_4cs.png' w='57900' x='38800' y='56000' />
+        <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' forceUpdate='true' h='27625' id='7' is-scaled='1' param='/Users/manuelaquino/Desktop/diamonds_project/flawless-diamond.png' w='33300' x='9100' y='65125' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='850' minheight='850' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='17' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98000' id='16' param='vert' w='98400' x='800' y='1000'>
+                <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' fixed-size='146' h='18250' id='3' is-fixed='true' is-scaled='1' param='/Users/manuelaquino/Desktop/diamonds_project/Ironhack_logo_transparent.png' w='16300' x='700' y='6375'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='12375' id='4' w='81700' x='16100' y='9750'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#000000' fontname='SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace' fontsize='20'>Data Analytics - Project Module 2 - Data Visualization</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='26250' id='5' w='93600' x='3300' y='29375'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#000000' fontname='SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace' fontsize='18'>Dataset to work with:</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#000000' fontname='SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace' fontsize='18'>diamonds_train.csv dataset.</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run bold='true' fontcolor='#000000' fontname='SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace' fontsize='18'>Focus on:</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#000000' fontname='SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace' fontsize='18'>Exploratory data analysis. (Matplotlib, Seaborn, Tableau)</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run bold='true' fontcolor='#000000' fontname='SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace' fontsize='18'>Final objective:</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#000000' fontname='SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace' fontsize='18'>To create a Tableau Public Dashboard with some general insights. </run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' fixed-size='280' h='44375' id='6' is-fixed='true' is-scaled='1' param='/Users/manuelaquino/Desktop/diamonds_project/diamond_4cs.png' w='57900' x='38800' y='56000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' fixed-size='221' forceUpdate='true' h='27625' id='7' is-fixed='true' is-scaled='1' param='/Users/manuelaquino/Desktop/diamonds_project/flawless-diamond.png' w='33300' x='9100' y='65125'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{61037C42-A3EA-4838-9708-B6A386CFA542}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='DCountClarity'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='100'>
+            <card pane-specification-id='0' param='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[none:clarity:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A6B5D9AC-7AA7-4E05-9AD0-E03591C9D6AF}' />
+    </window>
+    <window class='worksheet' name='DCountClarityREV%'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='100'>
+            <card pane-specification-id='1' param='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[none:clarity:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D99ED342-7D0B-4C04-AFE2-26A13893E827}' />
+    </window>
+    <window class='worksheet' name='DCountColor '>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='100'>
+            <card pane-specification-id='0' param='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[none:color:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F7EFC68E-AA7C-4257-890F-9520FCA99463}' />
+    </window>
+    <window class='worksheet' name='DCountColorREV%'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='100'>
+            <card pane-specification-id='0' param='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[none:color:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F4CCB556-9EE7-4581-BA54-83557BA19F8E}' />
+    </window>
+    <window class='worksheet' name='DCountCut'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='100'>
+            <card pane-specification-id='0' param='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[none:cut:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B748C68C-7665-4303-99FF-7EE284432E8D}' />
+    </window>
+    <window class='worksheet' name='BoxPlotPrice&amp;Clarity'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='100'>
+            <card pane-specification-id='2' param='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[none:clarity:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E80AF0B3-8ED4-44ED-915B-C69592F8210B}' />
+    </window>
+    <window class='worksheet' name='BoxPlotPrice&amp;Color'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[none:color:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{5124A83F-9DE4-426F-9A95-F366EBA2660E}' />
+    </window>
+    <window class='worksheet' name='BoxPlotPrice&amp;Cut'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='100'>
+            <card pane-specification-id='0' param='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[none:cut:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{388C83B8-F3A9-47FA-94E0-80F91E0874EB}' />
+    </window>
+    <window class='worksheet' name='NumericVariablesScatterPlot'>
+      <cards>
+        <edge name='left'>
+          <strip size='125'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{6209F016-CE00-4980-BC3C-B6AECDCB650E}' />
+    </window>
+    <window class='worksheet' name='DiamondsbyCaratBoxPlot'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='109'>
+            <card param='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[none:carat:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card param='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[none:color:nk]' type='filter' />
+            <card param='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[none:clarity:nk]' type='filter' />
+            <card param='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[none:cut:nk]' type='filter' />
+            <card pane-specification-id='3' param='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[sum:carat:qk]' type='color' />
+            <card pane-specification-id='3' param='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[sum:carat:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{432A244D-DF1D-460F-8E15-200C57080F02}' />
+    </window>
+    <window class='worksheet' maximized='true' name='DiamondsbyCaratHistogram'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='143'>
+            <card param='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[none:carat:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card param='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[none:cut:nk]' type='filter' />
+            <card param='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[none:color:nk]' type='filter' />
+            <card param='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[none:clarity:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[sum:carat:qk]' type='color' />
+            <card pane-specification-id='0' param='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[sum:carat:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{87A98F74-B071-4E4F-A65C-0F113F65AC7D}' />
+    </window>
+    <window class='worksheet' name='Price'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[sum:carat:qk]' type='size' />
+            <card pane-specification-id='1' param='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[sum:price:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4719751A-23F5-4C16-B8D2-BCAB8E4E325A}' />
+    </window>
+    <window class='worksheet' name='Price (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='100'>
+            <card param='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[none:price:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card pane-specification-id='2' param='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[sum:price:qk]' type='color' />
+            <card pane-specification-id='2' param='[federated.1xq8vqt1nve0ei1gcrdhl1r31k6k].[sum:price:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{558B9420-1C70-4077-8E59-924E6A83CEF5}' />
+    </window>
+    <window class='dashboard' name='Intro'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{D2D3B701-0A32-4D3D-BD2C-B94D1D634C2E}' />
+    </window>
+    <window class='dashboard' name='Diamonds'>
+      <viewpoints>
+        <viewpoint name='DCountClarity'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='DCountColor '>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='DCountCut'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='DiamondsbyCaratBoxPlot'>
+          <zoom type='entire-view' />
+          <floating-toolbar-visibility value='1' />
+        </viewpoint>
+        <viewpoint name='Price (2)'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='48' />
+      <grid grid-overlay-mode='on' grid-size='50' />
+      <simple-id uuid='{75765AFA-FDF5-4FCC-A30D-77E9D3A7C04A}' />
+    </window>
+  </windows>
+</workbook>

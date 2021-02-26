@@ -1,21 +1,22 @@
-# ih_datamadpt1120_project_m2
+
 
 <p align="left"><img src="https://cdn-images-1.medium.com/max/184/1*2GDcaeYIx_bQAZLxWM4PsQ@2x.png"></p>
 
-# __ih_datamadpt0420_project_m2__
+## __ih_datamadpt0420_project_m2__
 
-![Image](https://github.com/potacho/ih_datamadpt1120_project_m2/blob/master/images/visuals.jpg)
-
-Data analytics is oftentimes referred to as business intelligence, BI development, or product analytics. However, that is just the tip of the iceberg since the data analytics process includes activities such as data formation/creation, data cleansing, exploratory data analysis (especially this part), feature engineering, and interpretation of suggestions/predictions/results derived from advanced modelling analysis (i.e.: Machine Learning).
-
-For this project you will perform some of these activities in order to analyse the __diamonds_train.csv__ dataset. 
+![Image](https://venngage-wordpress.s3.amazonaws.com/uploads/2020/06/What-is-Data-Visualization-Blog-Header.jpg)
 
 
+### For this project we will perform exploratory data analysis on the __diamonds_train.csv__ dataset.
 
 ---
+## **Purpose:**
 
+- To get familiar with visualization libraries & tools: matplotlib, Seaborn and Tableau.
+- Use summary statistics and visualization as a first exploratory analysis on dataset.
+- Explain why your dashboard functionalities are the best for getting meaningful data insights.
 
-
+---
 ## **Deliverables:**
 
 A GitHub repository, preferably named: __ih_datamadpt0420_project_m2__, including:
@@ -26,39 +27,59 @@ A GitHub repository, preferably named: __ih_datamadpt0420_project_m2__, includin
 
 - `README.md` file explaining the job done, your main conclusions and the __link to your Tableau Public Dashboard__. You may find more info of how to build a README file [here](https://github.com/potacho/data-project-template/blob/master/README.md).
 
+---
 
+## **Context:**
+
+### **Dataset:**
+
+- __Rows:__ Contains information about 4055 unique diamonds (4055 rows).
+- __Columns:__ 7 relevant attributes or characteristics for diamonds.
+  ['carat'], ['depth'], ['table'], ['price'], ['x'], ['y'], ['z']
+<p align="center"><img src="https://www.diamonds717.com/wp-content/uploads/2019/03/lab-diamond-1024x320.jpg"></p>
+
+
+> __IMPORTANT NOTE:__ Although numbers and statistics on their own can provide a lot of useful and relevant information, probably any appropriate Data Exploration effort should start with getting familiar with the fundamentals of the business or topic on which data will be analyzed.
 
 ---
 
+## __The Diamonds 4 C's:__
+
+<p align="center"><img src="https://selectingadiamond.com/wp-content/uploads/2019/10/The-4Cs.jpg"></p>
+
+The 4Cs are a big factor when it comes to evaluating a diamond. Having a good understanding of the 4Cs will make the exploratory job easier.
+
+The individual characteristics of a diamond can play more or less of a role depending on the diamond’s specific shape, so knowing the shape should play a big role in terms of knowing how to evaluate a diamond. (This attribute or characteristic it's not included on our dataset columns.)
+
+<p align="center"><img src="https://www.havelustre.com/wp-content/uploads/shape-1536x247.png"></p>
 
 
-## **Presentation:**
+\
+The relevant categorical variables we do have, are:
 
-- __Time:__ 3 minutes sharp.
-- __Content:__ explain why your dashboard funtionalities are the best for getting meaningful data insights. Support your arguments on the conclusions obtained from the __exploratory analysis__. Conclude your pitch telling us (_in one sentence_) the most important insight (_under your criteria_) you've extracted.
+### **Carat:**
+<p align="center"><img src="https://selectingadiamond.com/wp-content/uploads/2019/09/how-size-and-weight.jpg"></p>
+Diamonds are graded by their weight. The more a diamond weighs, the greater its value. Simple!
 
-<p align="center"><img src="https://media.giphy.com/media/1Ygis29YXMS35cW90I/giphy.gif"></p>
+If you want to get technical, a carat is divisible by 100 points. If a diamond is 0.50ct, it may be referred to as 50 points. Diamonds over the 1 carat weight use carat and decimals. For example, a 1.25ct diamond would be “one point 25 carats.”
 
+### **Cut:**
+<p align="center"><img src="https://www.havelustre.com/wp-content/uploads/cut.png"></p>
+The cut of a diamond primarily focuses on the quality of its proportions, symmetry, and polish.
 
-> __IMPORTANT NOTE:__ You only need your Dashboard for the presentation (no Jupyter, no PowerPoint/Canva)
+- Proportions = measurements and angles relative to each other.
+- Symmetry = alignment of the facets (triangular “cuts”) relative to each other.
+- Polish = smoothness of the outer surface
 
+Diamonds are graded on a scale from Excellent to Poor (Excellent, Very Good, Good, Fair, Poor). The closer a diamond is to Excellent, the rarer it is.
 
+### **Color:**
+<p align="center"><img src="https://www.havelustre.com/wp-content/uploads/color.png"></p>
+The “color” of a diamond focuses on the LACK of color it contains; the closer to colorless, the higher the value. Although, colored diamonds are becoming increasingly more popular and have a scale all to themselves.
 
----
-
-
-
-## __Challenge 1: Exploratory Data Visualization Charts and Summary Statistics__
-
-The goal of this challenge is to build an __exploratory data analysis report__ in order to gain initial insight on our diamonds dataset. Your notebook must include:
-
-- Summary statistics including descriptive statistics (max, min, mean, standard deviation, percentiles, correlations, etc.) and data types (integer, float, boolean, string, etc.).
-- Data visualizations charts in order to capture a large amount of data all at once in a clear and concise manner (Box Plots, Histograms, Bar Plots, Scatter Plots, Correlation Matrix, etc.).
-
-<p align="center"><img src="https://media.giphy.com/media/iP1qEUE7VKhLq/giphy.gif"></p>
-
-> **IMPORTANT NOTE:** You may use any tool that you find more convenient in order to provide the requested output. 
-
+### **Clarity:**
+<p align="center"><img src="https://www.havelustre.com/wp-content/uploads/clarity-1536x482.png"></p>
+The “color” of a diamond focuses on the LACK of color it contains; the closer to colorless, the higher the value. Although, colored diamonds are becoming increasingly more popular and have a scale all to themselves.
 
 
 ---
